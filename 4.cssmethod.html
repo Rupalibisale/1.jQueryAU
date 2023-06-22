@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css in jQuery method</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+
+  <style>
+    body{
+        font-family: arial;
+    }
+
+    
+    #box{
+        background-color: pink;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid black;
+    }
+    #head{
+        text-align: center;
+    }
+    #head2{
+        text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+    <h2 id="head2"> CSS in jQuery method</h2>
+    <div id="box">
+        <h2 id="head">Text box</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, sunt illum. Qui
+            mollitia
+            aliquam
+            repellat odit veritatis, fugit nulla? Modi eaque tempora non beatae ex? Est temporibus aut distinctio odit
+            reiciendis impedit dolorum, quos non! Corrupti, blanditiis illo animi sapiente voluptas ex. Harum, dolor iste
+            amet temporibus enim dolores. Magnam natus eos consequuntur, molestiae quibusdam esse asperiores neque rem
+            temporibus ipsam impedit in modi voluptatem sequi? Id, in consequuntur nesciunt veniam ratione incidunt est
+            vitae voluptatibus officia, necessitatibus dolore ut?</p>
+    
+            <button id="style">Add Style</button>
+
+        </div>
+    <!-- <button id="style">Add Style</button> -->
+    <script>
+        $(document).ready(function(){
+            $("#style").click(function(){
+                $("#box").css({"background":"pink", "color":"red", "border":" 5px dotted green"
+            
+            });
+            });
+
+        });
+    </script>
+
+    
+</body>
+</html>

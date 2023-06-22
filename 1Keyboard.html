@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+    <!-- 1. Keypress()
+    2. keydown()
+    3. keyup() -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+  <style>
+    body{
+        font-family: arial;
+    }
+    #head{
+        text-align: center;
+    }
+    #box{
+        background-color: pink;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+    <h1 id="head">jQuery keyboard Event</h1>
+   <div id="box">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, sunt illum. Qui
+    mollitia
+    aliquam
+    repellat odit veritatis, fugit nulla? Modi eaque tempora non beatae ex? Est temporibus aut distinctio odit
+    reiciendis impedit dolorum, quos non! Corrupti, blanditiis illo animi sapiente voluptas ex. Harum, dolor iste
+    amet temporibus enim dolores. Magnam natus eos consequuntur, molestiae quibusdam esse asperiores neque rem
+    temporibus ipsam impedit in modi voluptatem sequi? Id, in consequuntur nesciunt veniam ratione incidunt est
+    vitae voluptatibus officia, necessitatibus dolore ut?</p>   
+</div>
+<script>
+    $(document).ready(function(){
+        $("body").keypress(function(){
+            $(this).css("background-color", "orange");
+        });
+
+        // $("body").keyup(function(){
+        //     $(this).css("background-color", "pink");
+        // });
+    });
+</script>
+    
+</body>
+</html>
